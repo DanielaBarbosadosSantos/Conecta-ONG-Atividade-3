@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all var(--transition-speed);
+}
+
+button, a.button {
+    background: var(--primary-color);
+    color: var(--neutral-100);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover, a.button:hover {
+    background: var(--primary-color-dark);
+    transform: scale(1.05);
+}
+
+.doacao-destaque {
+    background: var(--secondary-color);
+}
+
+.doacao-destaque:hover {
+    background: var(--secondary-color-dark);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn:focus {
+    outline: 2px solid var(--primary-color-dark);
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    background-color: var(--neutral-400);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.card {
+    background: var(--neutral-200);
+    padding: var(--spacing-4);
+    border: 1px solid var(--neutral-400);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-sm);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: var(--box-shadow-lg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+fieldset {
+    border: 1px solid var(--neutral-400);
+    padding: var(--spacing-3);
+    border-radius: var(--border-radius-sm);
+}
+
+legend {
+    font-weight: bold;
+    color: var(--neutral-900);
+    padding: 0 var(--spacing-1);
+}
+
+label {
+    margin-top: var(--spacing-2);
+    font-weight: 500;
+}
+
+input:not([type="checkbox"]),
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--neutral-400);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-base);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+    outline: none;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: var(--spacing-2) var(--spacing-3);
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--neutral-900);
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all var(--transition-speed);
+}
+
+header nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--neutral-100);
+    transform: translateY(-2px); 
+}
+
+header nav ul li a.active {
+    background-color: var(--primary-color);
+    color: var(--neutral-100);
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--neutral-100);
+    box-shadow: var(--box-shadow-md);
+    border-radius: var(--border-radius-sm);
+    min-width: 200px;
+    padding: var(--spacing-1) 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: var(--neutral-900);
+    font-weight: normal;
+    padding: 10px var(--spacing-2);
+    display: block;
+    border-radius: 0;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--primary-color);
+    color: var(--neutral-100);
+    transform: none;
+}
+
+
+.hamburger-button {
+    display: none; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-2);
+    z-index: 1001;
+}
+
+.hamburger-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--neutral-900);
+    margin-bottom: 5px;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hamburger-button[aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-button[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0; 
+}
+
+.hamburger-button[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+.tag {
+    display: inline-block;
+    padding: 4px var(--spacing-1);
+    margin: 0 4px 4px 0;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--text-color-light); 
+}
+
+.tag-educacao {
+    background-color: var(--primary-color);
+}
+
+.tag-animal {
+    background-color: var(--secondary-color);
+}
+
+.tag-saude {
+    background-color: #17a2b8; 
+} 
+
+.tag-meio-ambiente {
+    background-color: #28a745; 
+}
+
+.tag-periodo {
+    background-color: var(--neutral-900);
+}
+
+.tag-apoio-humanitario {
+    background-color: #00BFFF; 
+}
+
+.tag-direitos-humanos {
+    background-color: #8B0000; 
+}
+
+
+@media (max-width: 768px) {
+    .hamburger-button {
+        display: block; 
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--neutral-100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    header nav ul.menu-open {
+        display: flex; 
+    }
+
+   
+    .dropdown-menu {
+        position: static; 
+        box-shadow: none;
+        padding: 0;
+        min-width: 100%;
+        border: none;
+        padding-left: var(--spacing-3); 
+    }
+    .has-dropdown:hover .dropdown-menu {
+        display: none; 
+    }
+  
+    .has-dropdown.is-open .dropdown-menu {
+        display: block; 
+    }
+}

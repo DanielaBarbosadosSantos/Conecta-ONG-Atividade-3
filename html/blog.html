@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Logo Conecta ONG.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Conecta ONG</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="logo-link">
+                    <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
+                </a>
+                
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre a Plataforma</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="voluntariado.html">Oportunidades</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html"class="active">Blog</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Blog e Notícias</h1>
+            <p>Fique por dentro das últimas notícias, histórias inspiradoras e atualizações do universo do Terceiro Setor. Conheça o impacto real de cada doação e voluntariado.</p>
+        </section>
+
+        <section>
+            <h2>Artigos Recentes</h2>
+            
+            <div class="gallery-container">
+                <article class="gallery-item card">
+                    <img src="Três crianças sorrindo enquanto leem um livro juntas.jpg" alt="Três crianças sorrindo enquanto leem um livro juntas.">
+                    <h3>Conheça 3 ONGs que estão transformando a educação</h3>
+                    <p><span class="tag tag-educacao">EDUCAÇÃO</span></p> 
+                    <p>Por Equipe Conecta ONG | 05 de Outubro, 2025</p>
+                    <p>Neste artigo, apresentamos três ONGs parceiras que estão inovando na área da educação, utilizando métodos criativos para combater a evasão escolar e promover a inclusão social.</p>
+                    <a href="#">Leia mais</a>
+                </article>
+
+                 <article class="gallery-item card">
+                    <img src="Pessoas voluntárias plantando vegetais em uma horta comunitária.jpg" alt="Pessoas voluntárias plantando vegetais em uma horta comunitária.">
+                    <h3>Relato de um voluntário: "Minha experiência no Projeto Horta Comunitária"</h3>
+                    <p><span class="tag tag-meio-ambiente">MEIO AMBIENTE</span></p>
+                    <p>Por Maria Silva | 28 de Setembro, 2025</p>
+                    <p>Maria conta como se sentiu ao participar ativamente de um projeto que une sustentabilidade e segurança alimentar, e como sua vida foi impactada pela experiência.</p>
+                    <a href="#">Leia mais</a>
+                </article>
+
+                <article class="gallery-item card">
+                    <img src="Mãos segurando moedas e um pequeno saco com um sinal de coração, simbolizando doação..jpg" alt="Mãos segurando moedas e um pequeno saco com um sinal de coração, simbolizando doação.">
+                    <h3>Como sua doação de R$50 se transforma em impacto real</h3>
+                    <p><span class="tag tag-periodo">DOAÇÃO</span></p> 
+                    <p>Por Conecta ONG | 20 de Setembro, 2025</p>
+                    <p>Nossa equipe preparou um guia visual para mostrar exatamente como o valor de uma pequena doação pode ser multiplicado e ajudar a financiar um projeto inteiro.</p>
+                    <a href="#">Leia mais</a>
+                </article>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Assine nossa Newsletter</h2>
+            <p>Receba as novidades da plataforma e notícias do Terceiro Setor diretamente no seu e-mail.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Preferências de Conteúdo</legend>
+                    <p>Eu gostaria de receber e-mails sobre:</p>
+                    <input type="checkbox" id="news-geral" name="interesse" value="geral">
+                    <label for="news-geral">Notícias gerais da plataforma</label><br>
+                    <input type="checkbox" id="news-voluntariado" name="interesse" value="voluntariado">
+                    <label for="news-voluntariado">Oportunidades de voluntariado</label><br>
+                    <input type="checkbox" id="news-doacoes" name="interesse" value="doacoes">
+                    <label for="news-doacoes">Campanhas de doação</label>
+                </fieldset>
+                <br>
+                <label for="email-newsletter">Seu e-mail:</label>
+                <input type="email" id="email-newsletter" name="email" required>
+                <span class="error-message" id="error-email-newsletter"></span> 
+                <button type="submit">Assinar</button>
+            </form>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conecta ONG. Todos os direitos reservados.</p>
+        <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
+    </footer>
+    
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Mensagem Importante</h3>
+            <p>Esta é uma demonstração de um componente de feedback (Modal) que pode ser usado em qualquer interação.</p>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Entendido</button>
+        </div>
+    </div>
+    
+    <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>

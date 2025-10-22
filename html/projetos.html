@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Logo Conecta ONG.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Conecta ONG</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="logo-link">
+                    <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
+                </a>
+                
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre a Plataforma</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html" class="active">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="voluntariado.html">Oportunidades</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+
+        <section>
+            <h1>Projetos Sociais</h1>
+            <p>Descubra projetos que estão mudando o Brasil. Você pode filtrar por causa, localização ou ONG para encontrar a iniciativa ideal para apoiar.</p>
+            
+            <form action="#" method="get">
+                <label for="filtro-causa">Filtrar por Causa:</label>
+                <select id="filtro-causa" name="causa">
+                    <option value="">Todas as Causas</option>
+                    <option value="educacao">Educação</option>
+                    <option value="saude">Saúde</option>
+                    <option value="meio-ambiente">Meio Ambiente</option>
+                    <option value="direitos-humanos">Direitos Humanos</option>
+                </select>
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Vídeo em Destaque</h2>
+            <div class="video-container">
+                <p>Assista ao vídeo institucional de uma das ongs que já ajudamos para entender o impacto da nossa plataforma.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KI9Sf9v_3UQ?si=gKgqv_GDWWc9Zh-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Galeria de Fotos dos Projetos</h2>
+            <p>Um olhar sobre o impacto que estamos gerando.</p>
+            <div class="galeria-fotos">
+                <picture>
+                    <source srcset="Voluntariado.jpg" media="(max-width: 600px)">
+                    <img src="Voluntariado.jpg" alt="Voluntários em ação em um projeto de educação" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="WhatsApp Image 2025-02-25 at 18.16.59.jpeg" media="(max-width: 600px)">
+                    <img src="Equipe de saúde voluntária atendendo uma criança.jpeg" alt="Equipe de saúde voluntária atendendo uma criança" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="hortas-comunitarias-creditoemersonsoares.jpg" media="(max-width: 600px)">
+                    <img src="hortas-comunitarias-creditoemersonsoares.jpg" alt="Membros da comunidade cultivando uma horta" loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="image-67.jpeg" media="(max-width: 600px)">
+                    <img src="Crianças sorrindo em uma atividade cultural.jpeg" alt="Crianças sorrindo em uma atividade cultural" loading="lazy">
+                </picture>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projetos Ativos</h2>
+            <div class="cards-projetos">
+                <article>
+                    <h3>Projeto Acolher</h3>
+                    <p><strong>ONG:</strong> Casa da Esperança</p>
+                    <p><strong>Causa:</strong> <span class="tag tag-apoio-humanitario">Apoio a Refugiados</span></p>
+                    <p><strong>Descrição:</strong> Oferece abrigo, alimentação e assistência jurídica para famílias refugiadas que chegam ao Brasil.</p>
+                    <a href="#" class="button">Saiba mais sobre o projeto</a>
+                    <a href="#" class="button doacao-destaque">Doe para este projeto</a>
+                </article>
+
+                <article>
+                    <h3>Horta Comunitária</h3>
+                    <p><strong>ONG:</strong> Verde Vivo</p>
+                    <p><strong>Causa:</strong> <span class="tag tag-meio-ambiente">Meio Ambiente e Sustentabilidade</span></p>
+                    <p><strong>Descrição:</strong> Promove o cultivo de alimentos orgânicos em espaços urbanos, com o objetivo de gerar renda e segurança alimentar.</p>
+                    <a href="#" class="button">Saiba mais sobre o projeto</a>
+                    <a href="#" class="button">Seja voluntário neste projeto</a>
+                </article>
+
+                <article>
+                    <h3>Cidadania em Ação</h3>
+                    <p><strong>ONG:</strong> Associação Cidadã</p>
+                    <p><strong>Causa:</strong> <span class="tag tag-direitos-humanos">Direitos Humanos</span></p>
+                    <p><strong>Descrição:</strong> Campanha para a distribuição de kits de higiene e informação sobre direitos básicos para pessoas em situação de rua.</p>
+                    <a href="#" class="button">Saiba mais sobre o projeto</a>
+                    <a href="#" class="button doacao-destaque">Doe para este projeto</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conecta ONG. Todos os direitos reservados.</p>
+        <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
+    </footer>
+
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Informação de Projeto</h3>
+            <p>Este é um componente de feedback (Modal) que pode ser usado para exibir detalhes do projeto, ou após uma ação de doação/voluntariado.</p>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Entendido</button>
+        </div>
+    </div>
+    
+    <script type="module" src="assets/js/main.js"></script>
+    
+</body>
+</html>

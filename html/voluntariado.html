@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Logo Conecta ONG.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariado - Conecta ONG</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="logo-link">
+                    <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
+                </a>
+                
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre a Plataforma</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="voluntariado.html"class="active">Oportunidades</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+
+        <section>
+            <h1>Oportunidades de Voluntariado</h1>
+            <p>Seu tempo e talento podem mudar uma vida. Encontre a oportunidade ideal para você em nossa rede de ONGs parceiras.</p>
+            
+            <form action="#" method="get">
+                <label for="filtro-habilidade">Filtrar por Habilidade:</label>
+                <select id="filtro-habilidade" name="habilidade">
+                    <option value="">Qualquer Habilidade</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="ensino">Ensino</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="saude">Saúde</option>
+                </select>
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+
+        <section>
+    
+            <h2>Vagas em Aberto</h2>
+            <div class="gallery-container"> 
+                <article class="gallery-item">
+                    <img src="Instrutor ensinando um grupo de alunos em computadores..jpg" alt="Instrutor ensinando um grupo de alunos em computadores.">
+                    <h3>Instrutor de Informática</h3>
+                    <p><strong>ONG:</strong> Instituto Saber</p>
+                    <p><strong>Localização:</strong> São Paulo - SP</p>
+                    <p><strong>Descrição:</strong> Dar aulas básicas de informática para jovens da comunidade, ajudando-os a desenvolver habilidades digitais para o mercado de trabalho.</p>
+                    <p><strong>Período:</strong> Aos sábados, das 9h às 12h.</p>
+                    <a href="#">Candidate-se a esta vaga</a>
+                </article>
+
+                <article class="gallery-item">
+                    <img src="Pessoa utilizando um smartphone com ícones de redes sociais na tela..jpg" alt="Pessoa utilizando um smartphone com ícones de redes sociais na tela.">
+                    <h3>Divulgador Digital</h3>
+                    <p><strong>ONG:</strong> Verde Vivo</p>
+                    <p><strong>Localização:</strong> Remoto</p>
+                    <p><strong>Descrição:</strong> Ajude a divulgar nossas campanhas de plantio nas redes sociais. Não precisa de experiência, apenas paixão pela causa!</p>
+                    <p><strong>Período:</strong> Flexível.</p>
+                    <a href="#">Candidate-se a esta vaga</a>
+                </article>
+
+                <article class="gallery-item">
+            <img src="Grupo de voluntários decorando um salão para um evento.jpg" alt="Grupo de voluntários decorando um salão para um evento.">
+                    <h3>Organizador de Eventos</h3>
+                    <p><strong>ONG:</strong> Casa da Esperança</p>
+                    <p><strong>Localização:</strong> Rio de Janeiro - RJ</p>
+                    <p><strong>Descrição:</strong> Ajude na organização e execução de um evento de arrecadação de fundos para famílias refugiadas.</p>
+                    <p><strong>Período:</strong> Evento de um dia.</p>
+                    <a href="#">Candidate-se a esta vaga</a>
+                </article>
+            </div>
+
+        </section>
+        
+        <section>
+            <h2>Ainda não encontrou a vaga ideal?</h2>
+            <p>Cadastre-se para receber oportunidades personalizadas com base em suas habilidades e interesses.</p>
+            <a href="cadastro.html">Quero ser um voluntário</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conecta ONG. Todos os direitos reservados.</p>
+        <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
+    </footer>
+
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Mensagem Importante</h3>
+            <p>Este é um componente de feedback (Modal) para demonstrar a conformidade com as especificações técnicas.</p>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Fechar</button>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+    
+</body>
+</html>

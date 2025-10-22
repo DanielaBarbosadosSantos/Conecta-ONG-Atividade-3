@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="Logo Conecta ONG.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações - Conecta ONG</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="index.html" class="logo-link">
+                    <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
+                </a>
+                
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre a Plataforma</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="voluntariado.html">Oportunidades</a></li>
+                <li><a href="doacoes.html"class="active">Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Faça sua Doação e Transforme Vidas</h1>
+            <img src="Idoso recebendo um pacote de alimentos de um voluntário..jpg" alt="Idoso recebendo um pacote de alimentos de um voluntário." class="single-image">
+            <p>Sua contribuição é fundamental para o sucesso dos projetos sociais. Todo valor arrecadado é direcionado com transparência para a causa que você escolher.</p>
+        </section>
+
+        <section>
+            <h2>Campanhas em Destaque</h2>
+            <p>Apoie as campanhas com metas de arrecadação em tempo real e ajude a ONG a alcançar seus objetivos.</p>
+            
+            <div class="cards-projetos">
+                <article>
+                    <h3>Projeto Acolher: Alimentos para Refugiados</h3>
+                    <p><strong>ONG:</strong> Casa da Esperança</p>
+                    <p><strong>Causa:</strong> <span class="tag tag-animal" style="background-color: #6c757d;">Apoio Humanitário</span></p>
+                    <p><strong>Meta:</strong> R$ 10.000,00</p>
+                    <p><strong>Arrecadado:</strong> R$ 7.500,00 (75%)</p>
+                    <a href="#" class="button doacao-destaque">Doe para esta campanha</a>
+                </article>
+
+                <article>
+                    <h3>Equipamentos para reforço escolar</h3>
+                    <p><strong>ONG:</strong> Instituto Saber</p>
+                    <p><strong>Causa:</strong> <span class="tag tag-educacao">Educação</span></p>
+                    <p><strong>Meta:</strong> R$ 5.000,00</p>
+                    <p><strong>Arrecadado:</strong> R$ 2.500,00 (50%)</p>
+                    <a href="#" class="button doacao-destaque">Doe para esta campanha</a>
+                </article>
+            </div>
+            </section>
+
+        <section>
+            <h2>Doação Direta</h2>
+            <p>Se preferir, faça uma doação avulsa para uma das causas gerais da nossa plataforma. Os valores são distribuídos entre as ONGs parceiras que atuam na área.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informações da Doação</legend>
+
+                    <label for="valor">Valor da Doação (R$):</label>
+                    <input type="number" id="valor" name="valor" min="10" required>
+                    <span class="error-message" id="error-valor"></span>
+
+                    <label for="causa">Para qual causa você gostaria de doar?</label>
+                    <select id="causa" name="causa" required>
+                        <option value="">Escolha uma Causa</option> 
+                        <option value="educacao">Educação</option>
+                        <option value="saude">Saúde</option>
+                        <option value="meio-ambiente">Meio Ambiente</option>
+                        <option value="protecao-animal">Proteção Animal</option>
+                    </select>
+                    <span class="error-message" id="error-causa"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações de Pagamento (Formulário Simulado)</legend>
+                    <p>Esta seção será mais detalhada nas próximas etapas do projeto.</p>
+                    
+                    <label for="nome-cartao">Nome no Cartão:</label>
+                    <input type="text" id="nome-cartao" name="nome-cartao" required>
+                    <span class="error-message" id="error-nome-cartao"></span>
+
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" name="numero-cartao" required>
+                    <span class="error-message" id="error-numero-cartao"></span>
+                </fieldset>
+
+                <button type="submit">Finalizar Doação</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conecta ONG. Todos os direitos reservados.</p>
+        <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
+    </footer>
+
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Doação Concluída com Sucesso!</h3>
+            <p>Sua generosidade fará a diferença na vida de muitas pessoas. Acompanhe o impacto da sua doação em nosso blog.</p>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Obrigado!</button>
+        </div>
+    </div>
+    
+    <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>
