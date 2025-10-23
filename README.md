@@ -1,4 +1,4 @@
-# 💜 Conecta ONG | Plataforma de Voluntariado e Doações (Entrega 3)
+# 💜 Conecta ONG | Plataforma de Voluntariado e Doações 
 
 Plataforma web construída para conectar ONGs verificadas a voluntários e doadores, simplificando o processo de apoio ao Terceiro Setor. O projeto foca agora na **implementação de JavaScript Avançado** para transformar a interface em uma **Single Page Application (SPA)** dinâmica e interativa.
 
